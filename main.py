@@ -10,11 +10,11 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 @app.get("/")
-async def formulaire():
-    with open("formulaire.html", "r") as fd:
-        return HTMLResponse(content=fd.read(), status_code=200)
+def formulaire():
+    with open("formulaire.html", "r") as formulaire:
+        return HTMLResponse(content=formulaire.read(), status_code=200)
 
 
-@app.post("/")
-async def send_email(name: str = Form(...), email: str = Form(...), message: str = Form(...)):
+@app.post("/send")
+def send_email(name: str = Form(...), email: str = Form(...), message: str = Form(...)):
     return {"name": name, "email": email, "message": message}

@@ -1,0 +1,45 @@
+@font-face /*police à télécharger*/
+{
+    font-family: 'museo_slab500';
+    src: url('font/Museo_Slab_500_2-webfont.eot');
+    src: url('font/Slab_500_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Museo_Slab_500_2-webfont.woff2') format('woff2'),
+         url('font/Museo_Slab_500_2-webfont.woff') format('woff'),
+         url('font/Museo_Slab_500_2-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body/*règles générales de la page*/
+{
+  background-color:#b5c2e1;
+  font-family: 'museo_slab500', 'Comic Sans MS', 'Trebuchet MS', Arial;
+  font-size: 1.2em;
+  margin-top: 50px;
+}
+
+h1, div {
+  width: 380px;
+  margin: 5px auto;
+}
+
+h1 {
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label {
+  display: inline-block;
+  width: 125px;
+  text-align: right;
+  vertical-align: top;
+}
+
+#name, #mail, #msg {
+  width: 200px;
+}
+
+#submit {
+  margin-top: 20px;
+  text-align: center;
+}
